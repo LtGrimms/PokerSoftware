@@ -1,2 +1,4 @@
 testfile
 emacs-key-bindings.txt
+node_modules/*
+*~

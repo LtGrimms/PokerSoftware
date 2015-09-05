@@ -3,5 +3,9 @@
     "version": "1.0.0",
     "dependencies": {
         "fs": "*"
+    },
+    "devDependencies": {
+        "mocha": "*",
+        "should": "*"
     }
 }
