@@ -1,0 +1,24 @@
+module.exports = function(data) {
+    // this is where you parse the data
+    var lines = data.split("\\r\\n");
+    lines.forEach(function(line) {
+        console.log(line);
+    });
+    for (var i = 0; i < lines.length; i++) {
+        console.log(lines[i]);
+    }
+
+    var my_obj = {
+        prop1: "adfkj",
+        prop2: "maddie",
+        prop4: {}
+    };
+    my_obj.prop3 = "tony";
+    my_obj.test_func = function() {};
+    for (var prop in my_obj) {
+        if (typeof my_obj[prop] !== "function") {
+            console.log(my_obj[prop]);
+        }
+    }
+    console.log(my_obj.prop3 + " == " + my_obj["prop3"]);
+};
