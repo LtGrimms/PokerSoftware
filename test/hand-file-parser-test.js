@@ -1,7 +1,19 @@
 var should = require('should');
 var hand_file_parser = require('../lib/hand-file-parser');
+var fs = require('fs');
 
 describe('hand-file-parser-test', function() {
+    describe('parse_hand', function() {
+        it('should return the correct information', function() {
+            var input_hand = fs.readFileSync(__dirname + "/test-hand.txt", 'utf8');
+            var expected_output = require('./expected-output-hand.js');
+
+            var output_hand = hand_file_parser.parse_hand(input_hand);
+
+            output_hand.should.eql(expected_output);
+        });
+    });
+
     describe('addWinnings', function() {
         it('should add the winnings to the seat with the name of the winner and no others if sidepot is false', function() {
             var seats = [
