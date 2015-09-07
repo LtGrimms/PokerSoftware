@@ -6,7 +6,16 @@ describe('hand-file-parser-test', function() {
     describe('parse_hand', function() {
         it('should return the correct information', function() {
             var input_hand = fs.readFileSync(__dirname + "/testHands/test-hand1.txt", 'utf8');
-            var expected_output = require('./testHands/expected-output-hand.js');
+            var expected_output = require('./testHands/expected-output-hand1.js');
+
+            var output_hand = hand_file_parser.parse_hand(input_hand);
+
+            output_hand.should.eql(expected_output);
+        });
+
+        it('should return the correct information', function() {
+            var input_hand = fs.readFileSync(__dirname + "/testHands/test-hand2.txt", 'utf8');
+            var expected_output = require('./testHands/expected-output-hand2.js');
 
             var output_hand = hand_file_parser.parse_hand(input_hand);
 
