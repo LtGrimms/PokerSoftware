@@ -5,8 +5,8 @@ var fs = require('fs');
 describe('hand-file-parser-test', function() {
     describe('parse_hand', function() {
         it('should return the correct information', function() {
-            var input_hand = fs.readFileSync(__dirname + "/test-hand.txt", 'utf8');
-            var expected_output = require('./expected-output-hand.js');
+            var input_hand = fs.readFileSync(__dirname + "/testHands/test-hand1.txt", 'utf8');
+            var expected_output = require('./testHands/expected-output-hand.js');
 
             var output_hand = hand_file_parser.parse_hand(input_hand);
 
@@ -163,4 +163,26 @@ describe('hand-file-parser-test', function() {
             //error
         });
     });
+
+    describe('parseHandTable', function() {
+
+    });
+
+    describe('parseBoardTable', function() {
+
+    });
+
+    describe('parsePlayersHoleCards', function() {
+
+    });
+
+    describe('parsePlayersInformation', function() {
+
+    });
+
+    describe('parseActions', function() {
+
+    });
+
+    
 });
