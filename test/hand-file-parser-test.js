@@ -76,7 +76,7 @@ describe('hand-file-parser-test', function() {
             actualOutput.should.eql(expectedOutput);
         });
 
-        it('should return false for negative-integer values'. fucntion() {
+        it('should return false for negative-integer values', function() {
             var input = -1;
             var expectedOutput = false;
             var actualOutput = hand_file_parser.isPosInt(input);
@@ -90,13 +90,13 @@ describe('hand-file-parser-test', function() {
             var handNumber = 1;
             var name = "LtGrimms";
             var round = "flop";
-            var type = "bet"
+            var type = "bet";
             var amount = 120;
             var currentBetSize = 50;
 
-            var expectedOutput = {handNumber: handNumber, name: name, round, round, type: type, amount: amount, currentBetSize: currentBetSize};
+            var expectedOutput = {handNumber: handNumber, name: name, round: round, type: type, amount: amount, currentBetSize: currentBetSize};
 
-            var actualOutput = hand_file_parser.creatAction(handNumber, round, type, amount, currentBetSize);
+            var actualOutput = hand_file_parser.createAction(handNumber, name, round, type, amount, currentBetSize);
 
             expectedOutput.should.eql(actualOutput);
         });
@@ -105,7 +105,7 @@ describe('hand-file-parser-test', function() {
             var handNumber = -1;
             var name = "LtGrimms";
             var round = "flop";
-            var type = "bet"
+            var type = "bet";
             var amount = 120;
             var currentBetSize = 50;
 
@@ -116,7 +116,7 @@ describe('hand-file-parser-test', function() {
             var handNumber = 1;
             var name = 768;
             var round = "flop";
-            var type = "bet"
+            var type = "bet";
             var amount = 120;
             var currentBetSize = 50;
 
@@ -127,7 +127,7 @@ describe('hand-file-parser-test', function() {
             var handNumber = 1;
             var name = "LtGrimms";
             var round = "watermellon";
-            var type = "bet"
+            var type = "bet";
             var amount = 120;
             var currentBetSize = 50;
             //error?
@@ -137,7 +137,7 @@ describe('hand-file-parser-test', function() {
             var handNumber = 1;
             var name = "LtGrimms";
             var round = "flop";
-            var type = "raise the roof"
+            var type = "raise the roof";
             var amount = 120;
             var currentBetSize = 50;
             //error?
@@ -147,7 +147,7 @@ describe('hand-file-parser-test', function() {
             var handNumber = 1;
             var name = "LtGrimms";
             var round = "flop";
-            var type = "bet"
+            var type = "bet";
             var amount = -120;
             var currentBetSize = 50;
             //error
@@ -157,7 +157,7 @@ describe('hand-file-parser-test', function() {
             var handNumber = 1;
             var name = "LtGrimms";
             var round = "flop";
-            var type = "bet"
+            var type = "bet";
             var amount = 120;
             var currentBetSize = -50;
             //error

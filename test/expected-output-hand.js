@@ -3,8 +3,10 @@ module.exports = {
         number: '139421020234',
         timeStamp: '2015/08/15 14:41:48 ET',
         tournament: '1292680929',
+        anteAmount: '15',
         smallBlindAmount: 60,
-        bigBlindAmount: 120
+        bigBlindAmount: 120,
+        numberOfPlayers: 9
     },
     seats: [
         {
