@@ -1,0 +1,12 @@
+USE poker;
+
+CREATE TABLE seat
+(
+    handNumber BIGINT NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    chips BIGINT DEFAULT 0,
+    position INT,
+    winnings BIGINT DEFAULT 0,
+    sidepot BIGINT DEFAULT 0,
+    primary key (handNumber, name)
+);

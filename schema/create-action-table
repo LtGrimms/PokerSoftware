@@ -1,0 +1,12 @@
+USE poker;
+
+CREATE TABLE action
+(
+    handNumber BIGINT NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    actionNumber INT NOT NULL,
+    round VARCHAR(10) NOT NULL,
+    type VARCHAR(20),
+    raiseAmount BIGINT DEFAULT 0,
+    primary key (handNumber, round, actionNumber)
+);

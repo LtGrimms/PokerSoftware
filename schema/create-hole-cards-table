@@ -1,0 +1,10 @@
+USE poker;
+
+CREATE TABLE holeCards
+(
+    handNumber BIGINT NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    card1 VARCHAR(2),
+    card2 VARCHAR(2),
+    primary key (handNumber, name)
+ );
