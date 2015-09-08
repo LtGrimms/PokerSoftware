@@ -23,16 +23,30 @@ fs.readFile(filename, 'utf8', function(err, data) {
     connection.connect(function(err, result) {
         if (err) {
             console.error("Could not connect to database: " + err);
-            connection.end();
-            return;
         }
-        connection.query("", hand, function(err, result) {
-            if (err) {
-                console.error("Could not insert data: " + err);
-                connection.end();
-                return;
-            }
-            connection.end();
-        });
+        console.log("Connected successfully");
     });
+    // insert hand
+    connection.query("INSERT INTO hand SET ?", hand.hand, function(err, result) {
+        if (err) {
+            console.error("Could not insert data: " + err);
+        }
+        console.log("inserted hand successfully");
+    });
+    // insert seats
+    var i;
+    var seat_inserted_callback = function(err, result) {
+        if (err) {
+            console.error("Could not insert seat " + i + ", " + err);
+        }
+        console.log("inserted seat " + i);
+    };
+    for (i = 0; i < hand.seats.length; i++) {
+        connection.query("INSERT INTO seat SET ?", hand.seats[i], seat_inserted_callback);
+    }
+    // insert board
+    connection.query("INSERT INTO board SET ?", hand.board, function(err, result) {
+        
+    });
+    connection.end();
 });

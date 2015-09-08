@@ -1,7 +1,6 @@
 USE poker;
 
-CREATE TABLE hand
-(
+CREATE TABLE hand (
     tournament BIGINT,
     number BIGINT NOT NULL PRIMARY KEY,
     timestamp TIMESTAMP,
@@ -9,4 +8,4 @@ CREATE TABLE hand
     smallBlind INT,
     bigBlind INT,
     numberPlayers INT
-}
+);
