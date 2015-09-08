@@ -26,7 +26,7 @@ fs.readFile(filename, 'utf8', function(err, data) {
             connection.end();
             return;
         }
-        connection.query("",hand, function(err, result) {
+        connection.query("", hand, function(err, result) {
             if (err) {
                 console.error("Could not insert data: " + err);
                 connection.end();
