@@ -9,4 +9,4 @@ CREATE TABLE hand
     smallBlind INT,
     bigBlind INT,
     numberPlayers INT
-}
+);

@@ -1,0 +1,11 @@
+USE poker;
+
+CREATE TABLE board
+(
+    handNumber BIGINT NOT NULL PRIMARY KEY,
+    flop1 VARCHAR(2),
+    flop2 VARCHAR(2),
+    flop3 VARCHAR(2),
+    turn VARCHAR(2),
+    river VARCHAR(2)
+);
