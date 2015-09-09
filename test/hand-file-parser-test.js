@@ -174,7 +174,22 @@ describe('hand-file-parser-test', function() {
     });
 
     describe('parseHandTable', function() {
+        it('should return the correct hand number', function() {
+            var data = "yata yata yata PokerStars Hand #123456 blah blah blah";
+            var expectedOutput = {
+                number: 123456,
+                timeStamp: null,
+                tournament: null,
+                ante: null,
+                smallBlind: null,
+                bigBlind: null,
+                numberOfPlayer: null
+            };
 
+            var actualOutput = hand_file_parser.parseHandTable(data, null);
+
+            expectedOutput.should.eql(actualOutput);
+        });
     });
 
     describe('parseBoardTable', function() {
