@@ -26,27 +26,28 @@ fs.readFile(filename, 'utf8', function(err, data) {
         }
         console.log("Connected successfully");
     });
-    // insert hand
-    connection.query("INSERT INTO hand SET ?", hand.hand, function(err, result) {
-        if (err) {
-            console.error("Could not insert data: " + err);
-        }
-        console.log("inserted hand successfully");
-    });
-    // insert seats
-    var i;
-    var seat_inserted_callback = function(err, result) {
-        if (err) {
-            console.error("Could not insert seat " + i + ", " + err);
-        }
-        console.log("inserted seat " + i);
-    };
-    for (i = 0; i < hand.seats.length; i++) {
-        connection.query("INSERT INTO seat SET ?", hand.seats[i], seat_inserted_callback);
+
+    function insert_object(table, object) {
+        connection.query("INSERT INTO " + table + " SET ?", object, function(err, result) {
+            if (err) {
+                console.error("Could not insert data into " + table + ": ", err);
+            } else {
+                console.log("Inserted data into " + table + " successfully");
+            }
+        });
     }
-    // insert board
-    connection.query("INSERT INTO board SET ?", hand.board, function(err, result) {
-        
-    });
+
+    insert_object("hand", hand.hand);
+    var i;
+    for (i = 0; i < hand.seats.length; i++) {
+        insert_object("seat", hand.seats[i]);
+    }
+    insert_object("board", hand.board);
+    for (i = 0; i < hand.holeCards.length; i++) {
+        insert_object("holeCards", hand.holeCards[i]);
+    }
+    for (i = 0; i < hand.actions.length; i++) {
+        insert_object("action", hand.actions[i]);
+    }
     connection.end();
 });
