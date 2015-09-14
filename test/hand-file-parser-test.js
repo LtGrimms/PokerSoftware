@@ -174,16 +174,11 @@ describe('hand-file-parser-test', function() {
     });
 
     describe('parseHandTable', function() {
-        it('should return the correct hand number', function() {
-            var data = "yata yata yata PokerStars Hand #123456 blah blah blah";
+        it('should return the correct hand information', function() {
+            var data = "PokerStars Hand #123456: Tournament #789101112, $10 + $1 USD Hold'em No Limit - Level IV (100/200) - 2015/05/05 01:01:01 ET\nLtGrimms: posts the ante";
             var expectedOutput = {
-                number: 123456,
-                timeStamp: null,
-                tournament: null,
-                ante: null,
-                smallBlind: null,
-                bigBlind: null,
-                numberOfPlayer: null
+                number: 123456
+                
             };
 
             var actualOutput = hand_file_parser.parseHandTable(data, null);
@@ -193,7 +188,7 @@ describe('hand-file-parser-test', function() {
     });
 
     describe('parseBoardTable', function() {
-
+        
     });
 
     describe('parsePlayersHoleCards', function() {

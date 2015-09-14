@@ -9,7 +9,7 @@ fs.readFile(filename, 'utf8', function(err, data) {
         console.error(err);
     }
     var hand = hand_parser(data);
-
+    
     // Now that we have the data, make a database connection and insert it
     // (Just getting this working for one hand for now - will have to put it in a loop later)
     var connection = mysql.createConnection({
@@ -37,17 +37,17 @@ fs.readFile(filename, 'utf8', function(err, data) {
         });
     }
 
-    insert_object("hand", hand.hand);
+    //insert_object("hand", hand.hand);
     var i;
     for (i = 0; i < hand.seats.length; i++) {
-        insert_object("seat", hand.seats[i]);
+        //insert_object("seat", hand.seats[i]);
     }
-    insert_object("board", hand.board);
+    //insert_object("board", hand.board);
     for (i = 0; i < hand.holeCards.length; i++) {
-        insert_object("holeCards", hand.holeCards[i]);
+        //insert_object("holeCards", hand.holeCards[i]);
     }
     for (i = 0; i < hand.actions.length; i++) {
-        insert_object("action", hand.actions[i]);
+        //insert_object("action", hand.actions[i]);
     }
     connection.end();
 });
