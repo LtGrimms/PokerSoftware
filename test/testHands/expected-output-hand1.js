@@ -89,147 +89,168 @@ module.exports = {
     ],
     actions: [
         {
-            handNumber: '139421020234',
+            actionNumber: 1,
+            handNumber: 139421020234,
             name: 'gits1980',
             round: 'preflop',
             type: 'post ante',
             amount: 15,
-            currentBetSize: 0
+            currentBetSize: 120
         }, {
-            handNumber: '139421020234',
+            actionNumber: 2,
+            handNumber: 139421020234,
             name: 'rastamanooo',
             round: 'preflop',
             type: 'post ante',
             amount: 15,
-            currentBetSize: 0
+            currentBetSize: 120
         }, {
-            handNumber: '139421020234',
+            actionNumber: 3,
+            handNumber: 139421020234,
             name: 'liamkid',
             round: 'preflop',
             type: 'post ante',
             amount: 15,
-            currentBetSize: 0
+            currentBetSize: 120
         }, {
-            handNumber: '139421020234',
+            actionNumber: 4,
+            handNumber: 139421020234,
             name: 'R@nTAnpl@N',
             round: 'preflop',
             type: 'post ante',
             amount: 15,
-            currentBetSize: 0
+            currentBetSize: 120
         }, {
-            handNumber: '139421020234',
+            actionNumber: 5,
+            handNumber: 139421020234,
             name: 'Fakhish',
             round: 'preflop',
             type: 'post ante',
             amount: 15,
-            currentBetSize: 0
+            currentBetSize: 120
         }, {
-            handNumber: '139421020234',
+            actionNumber: 6,
+            handNumber: 139421020234,
             name: 'mecco',
             round: 'preflop',
             type: 'post ante',
             amount: 15,
-            currentBetSize: 0
+            currentBetSize: 120
         }, {
-            handNumber: '139421020234',
+            actionNumber: 7,
+            handNumber: 139421020234,
             name: 'LtGrimms',
             round: 'preflop',
             type: 'post ante',
             amount: 15,
-            currentBetSize: 0
+            currentBetSize: 120
         }, {
-            handNumber: '139421020234',
+            actionNumber: 8,
+            handNumber: 139421020234,
             name: 'Adios89',
             round: 'preflop',
             type: 'post ante',
             amount: 15,
-            currentBetSize: 0
+            currentBetSize: 120
         }, {
-            handNumber: '139421020234',
+            actionNumber: 9,
+            handNumber: 139421020234,
             name: 'kartrid',
             round: 'preflop',
             type: 'post ante',
             amount: 15,
-            currentBetSize: 0
+            currentBetSize: 120
         }, {
-            handNumber: '139421020234',
+            actionNumber: 10,
+            handNumber: 139421020234,
             name: 'R@nTAnpl@N',
             round: 'preflop',
             type: 'post blind',
             amount: 60,
-            currentBetSize: 0
+            currentBetSize: 120
         }, {
-            handNumber: '139421020234',
+            actionNumber: 11,
+            handNumber: 139421020234,
             name: 'Fakhish',
             round: 'preflop',
             type: 'post blind',
             amount: 120,
-            currentBetSize: 0
+            currentBetSize: 120
         }, {
-            handNumber: '139421020234',
+            actionNumber: 12,
+            handNumber: 139421020234,
             name: 'mecco',
             round: 'preflop',
             type: 'call',
             amount: 120,
             currentBetSize: 120
         }, {
-            handNumber: '139421020234',
+            actionNumber: 13,
+            handNumber: 139421020234,
             name: 'LtGrimms',
             round: 'preflop',
             type: 'fold',
             amount: null,
             currentBetSize: 120
         }, {
-            handNumber: '139421020234',
+            actionNumber: 14,
+            handNumber: 139421020234,
             name: 'Adios89',
             round: 'preflop',
             type: 'fold',
             amount: null,
             currentBetSize: 120
         }, {
-            handNumber: '139421020234',
+            actionNumber: 15,
+            handNumber: 139421020234,
             name: 'kartrid',
             round: 'preflop',
             type: 'raise all-in',
             amount: 1908,
             currentBetSize: 120
         }, {
-            handNumber: '139421020234',
+            actionNumber: 16,
+            handNumber: 139421020234,
             name: 'gits1980',
             round: 'preflop',
             type: 'fold',
             amount: null,
             currentBetSize: 2028
         }, {
-            handNumber: '139421020234',
+            actionNumber: 17,
+            handNumber: 139421020234,
             name: 'rastamanooo',
             round: 'preflop',
             type: 'fold',
             amount: null,
             currentBetSize: 2028
         }, {
-            handNumber: '139421020234',
+            actionNumber: 18,
+            handNumber: 139421020234,
             name: 'liamkid',
             round: 'preflop',
             type: 'fold',
             amount: null,
             currentBetSize: 2028
         }, {
-            handNumber: '139421020234',
+            actionNumber: 19,
+            handNumber: 139421020234,
             name: 'R@nTAnpl@N',
             round: 'preflop',
             type: 'fold',
             amount: null,
             currentBetSize: 2028
         }, {
-            handNumber: '139421020234',
+            actionNumber: 20,
+            handNumber: 139421020234,
             name: 'Fakhish',
             round: 'preflop',
             type: 'fold',
             amount: null,
             currentBetSize: 2028
         }, {
-            handNumber: '139421020234',
+            actionNumber: 21,
+            handNumber: 139421020234,
             name: 'mecco',
             round: 'preflop',
             type: 'call',

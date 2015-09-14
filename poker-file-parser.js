@@ -9,8 +9,6 @@ fs.readFile(filename, 'utf8', function(err, data) {
         console.error(err);
     }
 
-    var hand = hand_parser(data);
-
     // Now that we have the data, make a database connection and insert it
     var connection = mysql.createConnection({
         host: '192.168.0.4',

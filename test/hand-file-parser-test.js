@@ -1,14 +1,17 @@
 var should = require('should');
 var hand_file_parser = require('../lib/hand-file-parser');
 var fs = require('fs');
+var reLib = require('../lib/poker-regex-library');
 
 describe('hand-file-parser-test', function() {
-    describe('parse_hand', function() {
+    describe.skip('parseHand', function() {
         it('should return the correct information', function() {
             var input_hand = fs.readFileSync(__dirname + "/testHands/test-hand1.txt", 'utf8');
             var expected_output = require('./testHands/expected-output-hand1.js');
 
-            var output_hand = hand_file_parser.parse_hand(input_hand);
+            var hand = new hand_file_parser.hand();
+            hand.data = input_hand;
+            var output_hand = hand.parseHand();
 
             output_hand.should.eql(expected_output);
         });
@@ -17,7 +20,9 @@ describe('hand-file-parser-test', function() {
             var input_hand = fs.readFileSync(__dirname + "/testHands/test-hand2.txt", 'utf8');
             var expected_output = require('./testHands/expected-output-hand2.js');
 
-            var output_hand = hand_file_parser.parse_hand(input_hand);
+            var hand = new hand_file_parser.hand();
+            hand.data = input_hand;
+            var output_hand = hand.parseHand();
 
             output_hand.should.eql(expected_output);
         });
@@ -25,7 +30,8 @@ describe('hand-file-parser-test', function() {
 
     describe('addWinnings', function() {
         it('should add the winnings to the seat with the name of the winner and no others if sidepot is false', function() {
-            var seats = [
+            var hand = new hand_file_parser.hand();
+            hand.seats = [
                 {
                     name: "person1"
                 }, {
@@ -36,35 +42,36 @@ describe('hand-file-parser-test', function() {
             ];
             var winner = "person2";
             var winnings = 20;
-            var expected_output = JSON.parse(JSON.stringify(seats));
+            var expected_output = JSON.parse(JSON.stringify(hand.seats));
             expected_output[1].winnings = 20;
 
-            hand_file_parser.addWinnings(seats, winner, winnings);
+            hand.addWinnings(winner, winnings);
 
-            seats.should.eql(expected_output);
+            hand.seats.should.eql(expected_output);
         });
 
         it('should add the winnings to the sidepot of the winner if sidepot is true', function() {
-            var seats = [
+            var hand = new hand_file_parser.hand();
+            hand.seats = [
                 {
                     name: "person1",
-                    sidepots: 0
+                    sidepot: 0
                 }, {
                     name: "person2",
-                    sidepots: 0
+                    sidepot: 0
                 }, {
                     name: "person3",
-                    sidepots: 0
+                    sidepot: 0
                 }
             ];
             var winner = "person2";
             var winnings = 20;
-            var expected_output = JSON.parse(JSON.stringify(seats));
-            expected_output[1].sidepots = 20;
+            var expected_output = JSON.parse(JSON.stringify(hand.seats));
+            expected_output[1].sidepot = 20;
 
-            hand_file_parser.addWinnings(seats, winner, winnings, true);
+            hand.addWinnings(winner, winnings, true);
 
-            seats.should.eql(expected_output);
+            hand.seats.should.eql(expected_output);
         });
     });
 
@@ -103,11 +110,19 @@ describe('hand-file-parser-test', function() {
             var amount = 120;
             var currentBetSize = 50;
 
-            var expectedOutput = {handNumber: handNumber, name: name, round: round, type: type, amount: amount, currentBetSize: currentBetSize};
+            var expectedOutput = {
+                actionNumber: 1,
+                handNumber: handNumber,
+                name: name,
+                round: round,
+                type: type,
+                amount: amount,
+                currentBetSize: currentBetSize
+            };
 
-            var actualOutput = hand_file_parser.createAction(handNumber, name, round, type, amount, currentBetSize);
+            var actualOutput = hand_file_parser.createAction(handNumber, name, round, type, amount, currentBetSize, 1);
 
-            expectedOutput.should.eql(actualOutput);
+            actualOutput.should.eql(expectedOutput);
         });
 
         it('should throw an error if hand number is not a positive integer', function() {
@@ -118,7 +133,9 @@ describe('hand-file-parser-test', function() {
             var amount = 120;
             var currentBetSize = 50;
 
-            //how do i make it expect an error?
+            (function() {
+                hand_file_parser.createAction(handNumber, name, round, type, amount, currentBetSize, 1);
+            }).should.throw("handNumber should be a positive integer");
         });
 
         it('should throw an error if name is not a string', function() {
@@ -129,27 +146,9 @@ describe('hand-file-parser-test', function() {
             var amount = 120;
             var currentBetSize = 50;
 
-            //expect error?
-        });
-
-        it('should throw an error if round is not a valid round', function() {
-            var handNumber = 1;
-            var name = "LtGrimms";
-            var round = "watermellon";
-            var type = "bet";
-            var amount = 120;
-            var currentBetSize = 50;
-            //error?
-        });
-
-        it('should throw an error if type is a not a valid type', function() {
-            var handNumber = 1;
-            var name = "LtGrimms";
-            var round = "flop";
-            var type = "raise the roof";
-            var amount = 120;
-            var currentBetSize = 50;
-            //error?
+            (function() {
+                hand_file_parser.createAction(handNumber, name, round, type, amount, currentBetSize, 1);
+            }).should.throw("name must be a string");
         });
 
         it('should throw an error if amount is not a positive integer', function() {
@@ -159,7 +158,10 @@ describe('hand-file-parser-test', function() {
             var type = "bet";
             var amount = -120;
             var currentBetSize = 50;
-            //error
+
+            (function() {
+                hand_file_parser.createAction(handNumber, name, round, type, amount, currentBetSize, 1);
+            }).should.throw("tried to create action with non-integer bet/raise amount -120");
         });
 
         it('should throw an error if currentBetSize is not a positive integer', function() {
@@ -169,7 +171,10 @@ describe('hand-file-parser-test', function() {
             var type = "bet";
             var amount = 120;
             var currentBetSize = -50;
-            //error
+
+            (function() {
+                hand_file_parser.createAction(handNumber, name, round, type, amount, currentBetSize, 1);
+            }).should.throw("tried to create action with non-integer current bet amount");
         });
     });
 
@@ -177,18 +182,25 @@ describe('hand-file-parser-test', function() {
         it('should return the correct hand information', function() {
             var data = "PokerStars Hand #123456: Tournament #789101112, $10 + $1 USD Hold'em No Limit - Level IV (100/200) - 2015/05/05 01:01:01 ET\nLtGrimms: posts the ante";
             var expectedOutput = {
-                number: 123456
-                
+                number: "123456",
+                ante: null,
+                bigBlind: 200,
+                numberOfPlayers: null,
+                smallBlind: 100,
+                timestamp: new Date("2015-05-04 23:01:01.000 -0600"),
+                tournament: '789101112'
             };
+            var hand = new hand_file_parser.hand();
+            hand.data = data;
 
-            var actualOutput = hand_file_parser.parseHandTable(data, null);
+            hand.parseHandTable();
 
-            expectedOutput.should.eql(actualOutput);
+            hand.handInfo.should.eql(expectedOutput);
         });
     });
 
     describe('parseBoardTable', function() {
-        
+
     });
 
     describe('parsePlayersHoleCards', function() {
@@ -202,6 +214,4 @@ describe('hand-file-parser-test', function() {
     describe('parseActions', function() {
 
     });
-
-    
 });
