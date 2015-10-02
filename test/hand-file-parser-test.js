@@ -4,28 +4,35 @@ var fs = require('fs');
 var reLib = require('../lib/poker-regex-library');
 var errorLib = require('../lib/poker-error-library');
 
+var generate_output = false;
+
+var assert_or_save_output = function(data, filename) {
+    if (generate_output) {
+        fs.writeFileSync(__dirname + filename, "module.exports = " + JSON.stringify(data, null, "\t")); // \t pretty prints
+    } else {
+        var expected_output = require('.' + filename);
+        JSON.parse(JSON.stringify(data)).should.eql(expected_output);
+    }
+};
+
 describe('hand-file-parser-test', function() {
-    describe.skip('parseHand', function() {
+    describe('parseHand', function() {
         it('should return the correct information', function() {
             var input_hand = fs.readFileSync(__dirname + "/testHands/test-hand1.txt", 'utf8');
-            var expected_output = require('./testHands/expected-output-hand1.js');
-
             var hand = new hand_file_parser.hand();
             hand.data = input_hand;
             var output_hand = hand.parseHand();
 
-            output_hand.should.eql(expected_output);
+            assert_or_save_output(output_hand, '/testHands/expected-output-hand1.js');
         });
 
         it('should return the correct information', function() {
             var input_hand = fs.readFileSync(__dirname + "/testHands/test-hand2.txt", 'utf8');
-            var expected_output = require('./testHands/expected-output-hand2.js');
-
             var hand = new hand_file_parser.hand();
             hand.data = input_hand;
             var output_hand = hand.parseHand();
 
-            output_hand.should.eql(expected_output);
+            assert_or_save_output(output_hand, '/testHands/expected-output-hand2.js');
         });
     });
 
@@ -1044,6 +1051,59 @@ describe('hand-file-parser-test', function() {
             actualHand.parseWinnings(lines, 0, 0);
             
             actualHand.seats.should.eql(expectedHand.seats);
+        });
+
+        it('should correctly add winnings to the correct player', function() {
+            var line1 = "liamkid collected 735 from pot\n";
+            var line2 = "liamkid: doesn't show hand\n";
+            var line3 = "*** SUMMARY ***\n";
+            var line4 = "Total pot 735 | Rake 0\n";
+            var line5 = "Seat 1: gits1980 folded before Flop (didn't bet)\n";
+            var line6 = "Seat 2: rastamanooo (button) folded before Flop\n";
+            var line7 = "Seat 3: liamkid (small blind) collected (735)\n";
+            var line8 = "Seat 4: R@nTAnpl@N (big blind) folded before Flop\n";
+            var line9 = "Seat 5: Fakhish folded before Flop (didn't bet)\n";
+            var lin10 = "Seat 6: mecco folded before Flop (didn't bet)\n";
+            var lin11 = "Seat 7: LtGrimms folded before Flop (didn't bet)\n";
+            var lin12 = "Seat 8: Adios89 folded before Flop (didn't bet)\n";
+            var lin13 = "Seat 9: kartrid folded before Flop (didn't bet)\n";
+            var lines = [line1, line2, line3, line4, line5, line6, line7, line8, line9, lin10, lin11, lin12, lin13];
+
+            var expectedHand = new hand_file_parser.hand();
+            var actualHand = new hand_file_parser.hand();
+
+
+            actualHand.seats = [
+                {
+                    name: "gits1980"
+                }, {
+                    name: "rastamanooo"
+                }, {
+                    name: "liamkid"
+                }, {
+                    name: "R@nTAnpl@N"
+                }, {
+                    name: "Fakhish"
+                }, {
+                    name: "mecco"
+                }, {
+                    name: "LtGrimms"
+                }, {
+                    name: "Adios89"
+                }, {
+                    name: "kartrid"
+                }
+            ];
+
+            expectedHand.seats = actualHand.seats;
+            expectedHand.seats[2].winnings = 735;
+            
+            actualHand.parseWinnings(lines, 0, 0);
+            
+            actualHand.seats.should.eql(expectedHand.seats);
+            
+            
+
         });
     });
 });
