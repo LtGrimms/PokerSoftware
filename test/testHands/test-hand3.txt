@@ -1,0 +1,54 @@
+PokerStars Hand #139424116022: Tournament #1292680929, $10+$1 USD Hold'em No Limit - Level XV (300/600) - 2015/08/15 15:49:55 ET
+Table '1292680929 17' 9-max Seat #7 is the button
+Seat 1: hironisisaka (12956 in chips) 
+Seat 2: FIZZE76 (11464 in chips) 
+Seat 3: DRAGOS FCSB (6237 in chips) 
+Seat 4: R@nTAnpl@N (89 in chips) 
+Seat 5: Fakhish (8170 in chips) 
+Seat 6: zas91 (10024 in chips) 
+Seat 7: LtGrimms (8101 in chips) 
+Seat 8: Adios89 (11402 in chips) 
+Seat 9: MoKoZoBa (5556 in chips) 
+hironisisaka: posts the ante 70
+FIZZE76: posts the ante 70
+DRAGOS FCSB: posts the ante 70
+R@nTAnpl@N: posts the ante 70
+Fakhish: posts the ante 70
+zas91: posts the ante 70
+LtGrimms: posts the ante 70
+Adios89: posts the ante 70
+MoKoZoBa: posts the ante 70
+Adios89: posts small blind 300
+MoKoZoBa: posts big blind 600
+*** HOLE CARDS ***
+Dealt to LtGrimms [Qs 9c]
+hironisisaka: folds 
+FIZZE76: folds 
+DRAGOS FCSB: folds 
+R@nTAnpl@N: calls 19 and is all-in
+Fakhish: folds 
+zas91: folds 
+LtGrimms: folds 
+Adios89: folds 
+Uncalled bet (300) returned to MoKoZoBa
+*** FLOP *** [Th Jh 3c]
+*** TURN *** [Th Jh 3c] [As]
+*** RIVER *** [Th Jh 3c As] [8h]
+*** SHOW DOWN ***
+MoKoZoBa: shows [7c 7s] (a pair of Sevens)
+MoKoZoBa collected 562 from side pot
+R@nTAnpl@N: shows [5h 9s] (high card Ace)
+MoKoZoBa collected 687 from main pot
+R@nTAnpl@N finished the tournament in 137th place
+*** SUMMARY ***
+Total pot 1249 Main pot 687. Side pot 562. | Rake 0 
+Board [Th Jh 3c As 8h]
+Seat 1: hironisisaka folded before Flop (didn't bet)
+Seat 2: FIZZE76 folded before Flop (didn't bet)
+Seat 3: DRAGOS FCSB folded before Flop (didn't bet)
+Seat 4: R@nTAnpl@N showed [5h 9s] and lost with high card Ace
+Seat 5: Fakhish folded before Flop (didn't bet)
+Seat 6: zas91 folded before Flop (didn't bet)
+Seat 7: LtGrimms (button) folded before Flop (didn't bet)
+Seat 8: Adios89 (small blind) folded before Flop
+Seat 9: MoKoZoBa (big blind) showed [7c 7s] and won (1249) with a pair of Sevens

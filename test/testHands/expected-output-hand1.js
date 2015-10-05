@@ -1,20 +1,16 @@
 module.exports = {
 	"hand": {
-		"number": "139421020234",
+		"number": 139421020234,
 		"timestamp": "2015-08-15T18:41:48.000Z",
-		"tournament": "1292680929",
-		"ante": [
-			"gits1980: posts the ante 15",
-			"gits1980",
-			"15"
-		],
+		"tournament": 1292680929,
+		"ante": 15,
 		"smallBlind": 60,
 		"bigBlind": 120,
 		"numberOfPlayers": 9
 	},
 	"seats": [
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "gits1980",
 			"chips": 1765,
 			"winnings": 0,
@@ -22,7 +18,7 @@ module.exports = {
 			"position": 7
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "rastamanooo",
 			"chips": 1880,
 			"winnings": 0,
@@ -30,7 +26,7 @@ module.exports = {
 			"position": 8
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "liamkid",
 			"chips": 2144,
 			"winnings": 0,
@@ -38,7 +34,7 @@ module.exports = {
 			"position": 9
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "R@nTAnpl@N",
 			"chips": 2411,
 			"winnings": 0,
@@ -46,7 +42,7 @@ module.exports = {
 			"position": 1
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "Fakhish",
 			"chips": 4564,
 			"winnings": 0,
@@ -54,7 +50,7 @@ module.exports = {
 			"position": 2
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "mecco",
 			"chips": 3369,
 			"winnings": 4371,
@@ -62,7 +58,7 @@ module.exports = {
 			"position": 3
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "LtGrimms",
 			"chips": 6476,
 			"winnings": 0,
@@ -70,7 +66,7 @@ module.exports = {
 			"position": 4
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "Adios89",
 			"chips": 2016,
 			"winnings": 0,
@@ -78,7 +74,7 @@ module.exports = {
 			"position": 5
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "kartrid",
 			"chips": 2043,
 			"winnings": 0,
@@ -87,7 +83,7 @@ module.exports = {
 		}
 	],
 	"board": {
-		"handNumber": "139421020234",
+		"handNumber": 139421020234,
 		"flop1": "5d",
 		"flop2": "Ad",
 		"flop3": "7d",
@@ -96,19 +92,19 @@ module.exports = {
 	},
 	"holeCards": [
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "LtGrimms",
 			"card1": "Qh",
 			"card2": "Ts"
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "mecco",
 			"card1": "Js",
 			"card2": "Ah"
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "kartrid",
 			"card1": "Th",
 			"card2": "Td"
@@ -116,7 +112,7 @@ module.exports = {
 	],
 	"actions": [
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "gits1980",
 			"round": "preflop",
 			"type": "postAnte",
@@ -126,7 +122,7 @@ module.exports = {
 			"actionNumber": 1
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "rastamanooo",
 			"round": "preflop",
 			"type": "postAnte",
@@ -136,7 +132,7 @@ module.exports = {
 			"actionNumber": 2
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "liamkid",
 			"round": "preflop",
 			"type": "postAnte",
@@ -146,7 +142,7 @@ module.exports = {
 			"actionNumber": 3
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "R@nTAnpl@N",
 			"round": "preflop",
 			"type": "postAnte",
@@ -156,7 +152,7 @@ module.exports = {
 			"actionNumber": 4
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "Fakhish",
 			"round": "preflop",
 			"type": "postAnte",
@@ -166,7 +162,7 @@ module.exports = {
 			"actionNumber": 5
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "mecco",
 			"round": "preflop",
 			"type": "postAnte",
@@ -176,7 +172,7 @@ module.exports = {
 			"actionNumber": 6
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "LtGrimms",
 			"round": "preflop",
 			"type": "postAnte",
@@ -186,7 +182,7 @@ module.exports = {
 			"actionNumber": 7
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "Adios89",
 			"round": "preflop",
 			"type": "postAnte",
@@ -196,7 +192,7 @@ module.exports = {
 			"actionNumber": 8
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "kartrid",
 			"round": "preflop",
 			"type": "postAnte",
@@ -206,7 +202,7 @@ module.exports = {
 			"actionNumber": 9
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "R@nTAnpl@N",
 			"round": "preflop",
 			"type": "postBlind",
@@ -216,7 +212,7 @@ module.exports = {
 			"actionNumber": 10
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "Fakhish",
 			"round": "preflop",
 			"type": "postBlind",
@@ -226,7 +222,7 @@ module.exports = {
 			"actionNumber": 11
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "mecco",
 			"round": "preflop",
 			"type": "call",
@@ -236,7 +232,7 @@ module.exports = {
 			"actionNumber": 12
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "LtGrimms",
 			"round": "preflop",
 			"type": "fold",
@@ -246,7 +242,7 @@ module.exports = {
 			"actionNumber": 13
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "Adios89",
 			"round": "preflop",
 			"type": "fold",
@@ -256,73 +252,73 @@ module.exports = {
 			"actionNumber": 14
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "kartrid",
 			"round": "preflop",
 			"type": "raiseAllIn",
-			"amount": 1908,
+			"amount": 2028,
 			"currentBetSize": 120,
 			"currentPotSize": 435,
 			"actionNumber": 15
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "gits1980",
 			"round": "preflop",
 			"type": "fold",
 			"amount": 0,
 			"currentBetSize": 2028,
-			"currentPotSize": null,
+			"currentPotSize": 2463,
 			"actionNumber": 16
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "rastamanooo",
 			"round": "preflop",
 			"type": "fold",
 			"amount": 0,
 			"currentBetSize": 2028,
-			"currentPotSize": null,
+			"currentPotSize": 2463,
 			"actionNumber": 17
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "liamkid",
 			"round": "preflop",
 			"type": "fold",
 			"amount": 0,
 			"currentBetSize": 2028,
-			"currentPotSize": null,
+			"currentPotSize": 2463,
 			"actionNumber": 18
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "R@nTAnpl@N",
 			"round": "preflop",
 			"type": "fold",
 			"amount": 0,
 			"currentBetSize": 2028,
-			"currentPotSize": null,
+			"currentPotSize": 2463,
 			"actionNumber": 19
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "Fakhish",
 			"round": "preflop",
 			"type": "fold",
 			"amount": 0,
 			"currentBetSize": 2028,
-			"currentPotSize": null,
+			"currentPotSize": 2463,
 			"actionNumber": 20
 		},
 		{
-			"handNumber": "139421020234",
+			"handNumber": 139421020234,
 			"name": "mecco",
 			"round": "preflop",
 			"type": "call",
 			"amount": 1908,
 			"currentBetSize": 2028,
-			"currentPotSize": null,
+			"currentPotSize": 2463,
 			"actionNumber": 21
 		}
 	]

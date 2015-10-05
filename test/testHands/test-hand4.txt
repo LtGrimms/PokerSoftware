@@ -1,0 +1,48 @@
+PokerStars Hand #139418799417: Tournament #1292680929, $10+$1 USD Hold'em No Limit - Level IV (25/50) - 2015/08/15 13:47:34 ET
+Table '1292680929 17' 9-max Seat #8 is the button
+Seat 1: gits1980 (3120 in chips) 
+Seat 2: rastamanooo (2665 in chips) 
+Seat 3: liamkid (2764 in chips) 
+Seat 4: R@nTAnpl@N (3097 in chips) 
+Seat 5: Fakhish (3000 in chips) 
+Seat 6: mecco (2825 in chips) 
+Seat 7: LtGrimms (3301 in chips) 
+Seat 8: Adios89 (3006 in chips) 
+Seat 9: kartrid (2890 in chips) 
+kartrid: posts small blind 25
+gits1980: posts big blind 50
+*** HOLE CARDS ***
+Dealt to LtGrimms [Qc 6h]
+rastamanooo: folds 
+liamkid: folds 
+R@nTAnpl@N: raises 100 to 150
+Fakhish: folds 
+mecco: folds 
+LtGrimms: folds 
+Adios89: calls 150
+kartrid: folds 
+gits1980: folds 
+*** FLOP *** [8h 7s 5c]
+R@nTAnpl@N: bets 247
+Adios89: calls 247
+*** TURN *** [8h 7s 5c] [9h]
+R@nTAnpl@N: checks 
+Adios89: checks 
+*** RIVER *** [8h 7s 5c 9h] [3s]
+R@nTAnpl@N: bets 278
+Adios89: raises 684 to 962
+R@nTAnpl@N: folds 
+Uncalled bet (684) returned to Adios89
+Adios89 collected 1425 from pot
+*** SUMMARY ***
+Total pot 1425 | Rake 0 
+Board [8h 7s 5c 9h 3s]
+Seat 1: gits1980 (big blind) folded before Flop
+Seat 2: rastamanooo folded before Flop (didn't bet)
+Seat 3: liamkid folded before Flop (didn't bet)
+Seat 4: R@nTAnpl@N folded on the River
+Seat 5: Fakhish folded before Flop (didn't bet)
+Seat 6: mecco folded before Flop (didn't bet)
+Seat 7: LtGrimms folded before Flop (didn't bet)
+Seat 8: Adios89 (button) collected (1425)
+Seat 9: kartrid (small blind) folded before Flop

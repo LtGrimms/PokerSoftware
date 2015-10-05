@@ -1,0 +1,57 @@
+PokerStars Hand #139421302212: Tournament #1292680929, $10+$1 USD Hold'em No Limit - Level IX (75/150) - 2015/08/15 14:48:14 ET
+Table '1292680929 17' 9-max Seat #3 is the button
+Seat 1: gits1980 (1365 in chips) 
+Seat 2: rastamanooo (2290 in chips) 
+Seat 3: liamkid (2129 in chips) 
+Seat 4: R@nTAnpl@N (2026 in chips) 
+Seat 5: Fakhish (3428 in chips) 
+Seat 6: mecco (4487 in chips) 
+Seat 7: LtGrimms (6076 in chips) 
+Seat 8: Adios89 (4402 in chips) 
+Seat 9: 99cards (5843 in chips) 
+gits1980: posts the ante 20
+rastamanooo: posts the ante 20
+liamkid: posts the ante 20
+R@nTAnpl@N: posts the ante 20
+Fakhish: posts the ante 20
+mecco: posts the ante 20
+LtGrimms: posts the ante 20
+Adios89: posts the ante 20
+99cards: posts the ante 20
+R@nTAnpl@N: posts small blind 75
+Fakhish: posts big blind 150
+*** HOLE CARDS ***
+Dealt to LtGrimms [7h Kc]
+mecco: folds 
+LtGrimms: folds 
+Adios89: folds 
+99cards: calls 150
+gits1980: folds 
+rastamanooo: folds 
+liamkid: folds 
+R@nTAnpl@N: folds 
+Fakhish: checks 
+*** FLOP *** [2d 3h 5s]
+Fakhish: checks 
+99cards: bets 150
+Fakhish: calls 150
+*** TURN *** [2d 3h 5s] [6s]
+Fakhish: checks 
+99cards: checks 
+*** RIVER *** [2d 3h 5s 6s] [9s]
+Fakhish: bets 750
+99cards: folds 
+Uncalled bet (750) returned to Fakhish
+Fakhish collected 855 from pot
+*** SUMMARY ***
+Total pot 855 | Rake 0 
+Board [2d 3h 5s 6s 9s]
+Seat 1: gits1980 folded before Flop (didn't bet)
+Seat 2: rastamanooo folded before Flop (didn't bet)
+Seat 3: liamkid (button) folded before Flop (didn't bet)
+Seat 4: R@nTAnpl@N (small blind) folded before Flop
+Seat 5: Fakhish (big blind) collected (855)
+Seat 6: mecco folded before Flop (didn't bet)
+Seat 7: LtGrimms folded before Flop (didn't bet)
+Seat 8: Adios89 folded before Flop (didn't bet)
+Seat 9: 99cards folded on the River

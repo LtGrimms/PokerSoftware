@@ -1,0 +1,47 @@
+PokerStars Hand #139420699465: Tournament #1292680929, $10+$1 USD Hold'em No Limit - Level VIII (60/120) - 2015/08/15 14:34:29 ET
+Table '1292680929 17' 9-max Seat #4 is the button
+Seat 1: gits1980 (2065 in chips) 
+Seat 2: rastamanooo (1475 in chips) 
+Seat 3: liamkid (1574 in chips) 
+Seat 4: R@nTAnpl@N (2651 in chips) 
+Seat 5: Fakhish (5224 in chips) 
+Seat 6: mecco (3909 in chips) 
+Seat 7: LtGrimms (5981 in chips) 
+Seat 8: Adios89 (1446 in chips) 
+Seat 9: kartrid (2343 in chips) 
+gits1980: posts the ante 15
+rastamanooo: posts the ante 15
+liamkid: posts the ante 15
+R@nTAnpl@N: posts the ante 15
+Fakhish: posts the ante 15
+mecco: posts the ante 15
+LtGrimms: posts the ante 15
+Adios89: posts the ante 15
+kartrid: posts the ante 15
+Fakhish: posts small blind 60
+mecco: posts big blind 120
+*** HOLE CARDS ***
+Dealt to LtGrimms [9s 2h]
+LtGrimms: folds 
+Adios89: folds 
+kartrid: folds 
+gits1980: folds 
+rastamanooo: folds 
+liamkid: raises 1439 to 1559 and is all-in
+R@nTAnpl@N: folds 
+Fakhish: folds 
+mecco: folds 
+Uncalled bet (1439) returned to liamkid
+liamkid collected 435 from pot
+liamkid: doesn't show hand 
+*** SUMMARY ***
+Total pot 435 | Rake 0 
+Seat 1: gits1980 folded before Flop (didn't bet)
+Seat 2: rastamanooo folded before Flop (didn't bet)
+Seat 3: liamkid collected (435)
+Seat 4: R@nTAnpl@N (button) folded before Flop (didn't bet)
+Seat 5: Fakhish (small blind) folded before Flop
+Seat 6: mecco (big blind) folded before Flop
+Seat 7: LtGrimms folded before Flop (didn't bet)
+Seat 8: Adios89 folded before Flop (didn't bet)
+Seat 9: kartrid folded before Flop (didn't bet)
