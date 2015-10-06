@@ -7,6 +7,8 @@ CREATE TABLE action
     actionNumber INT NOT NULL,
     round VARCHAR(10) NOT NULL,
     type VARCHAR(20),
-    raiseAmount BIGINT DEFAULT 0,
+    amount BIGINT DEFAULT 0,
+    currentBetSize BIGINT NOT NULL,
+    currentPotSize BIGINT NOT NULL,
     primary key (handNumber, round, actionNumber)
 );

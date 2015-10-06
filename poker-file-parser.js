@@ -40,18 +40,21 @@ fs.readFile(filename, 'utf8', function(err, data) {
     for (var j = 0; j < hands.length; j++) {
         var i;
         if (!hands[j]) continue;
-        var hand = hand_parser(hands[j]);
+        var hand = new hand_parser.hand(hands[j]);
+        hand.data = hands[j];
+        hand = hand.parseHand();
+        //console.log(JSON.stringify(hand, null, "\t"));
         console.log("parsed hand: " + hand.hand.number);
-        //insert_object("hand", hand.hand);
+        insert_object("hand", hand.hand);
         for (i = 0; i < hand.seats.length; i++) {
-            //insert_object("seat", hand.seats[i]);
+            insert_object("seat", hand.seats[i]);
         }
-        //insert_object("board", hand.board);
+        insert_object("board", hand.board);
         for (i = 0; i < hand.holeCards.length; i++) {
-            //insert_object("holeCards", hand.holeCards[i]);
+            insert_object("holeCards", hand.holeCards[i]);
         }
         for (i = 0; i < hand.actions.length; i++) {
-            //insert_object("action", hand.actions[i]);
+            insert_object("action", hand.actions[i]);
         }
     }
     connection.end();

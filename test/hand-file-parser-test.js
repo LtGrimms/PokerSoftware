@@ -70,7 +70,26 @@ describe('hand-file-parser-test', function() {
 
             assert_or_save_output(output_hand, '/testHands/expected-output-hand6.js');
         });
-        
+
+
+        it('should return the correct information', function() {
+            var input_hand = fs.readFileSync(__dirname + "/testHands/test-hand7.txt", 'utf8');
+            var hand = new hand_file_parser.hand();
+            hand.data = input_hand;
+            var output_hand = hand.parseHand();
+
+            assert_or_save_output(output_hand, '/testHands/expected-output-hand7.js');
+        });
+
+        it('should return the correct information', function() {
+            var input_hand = fs.readFileSync(__dirname + "/testHands/test-hand8.txt", 'utf8');
+            var hand = new hand_file_parser.hand();
+            hand.data = input_hand;
+            var output_hand = hand.parseHand();
+
+            assert_or_save_output(output_hand, '/testHands/expected-output-hand8.js');
+        });
+
     });
 
     describe('addWinnings', function() {
@@ -931,7 +950,7 @@ describe('hand-file-parser-test', function() {
         });
     });
 
-    describe('parseOpponentHoleCards', function() {
+    describe.skip('parseOpponentHoleCards', function() {
         it('should correctly parse hold cards that are displayed in a showdown', function() {
             var line1 = "Dealt to LtGrimms [As Ah]\n";
             var line2 = "***** SHOW DOWN *****\n";

@@ -1,0 +1,53 @@
+PokerStars Hand #139423816043: Tournament #1292680929, $10+$1 USD Hold'em No Limit - Level XIV (250/500) - 2015/08/15 15:43:47 ET
+Table '1292680929 17' 9-max Seat #9 is the button
+Seat 1: hironisisaka (5158 in chips) 
+Seat 2: FIZZE76 (5707 in chips) 
+Seat 3: DRAGOS FCSB (9485 in chips) 
+Seat 4: R@nTAnpl@N (7005 in chips) 
+Seat 5: Fakhish (10350 in chips) 
+Seat 6: zas91 (9414 in chips) 
+Seat 7: LtGrimms (12688 in chips) 
+Seat 8: Adios89 (2308 in chips) 
+Seat 9: MoKoZoBa (11884 in chips) 
+hironisisaka: posts the ante 60
+FIZZE76: posts the ante 60
+DRAGOS FCSB: posts the ante 60
+R@nTAnpl@N: posts the ante 60
+Fakhish: posts the ante 60
+zas91: posts the ante 60
+LtGrimms: posts the ante 60
+Adios89: posts the ante 60
+MoKoZoBa: posts the ante 60
+hironisisaka: posts small blind 250
+FIZZE76: posts big blind 500
+*** HOLE CARDS ***
+Dealt to LtGrimms [2s 2c]
+DRAGOS FCSB: folds 
+R@nTAnpl@N: folds 
+Fakhish: folds 
+zas91: folds 
+LtGrimms: raises 500 to 1000
+Adios89: folds 
+MoKoZoBa: folds 
+hironisisaka: folds 
+FIZZE76: raises 4647 to 5647 and is all-in
+LtGrimms: calls 4647
+*** FLOP *** [Qc 8h 6s]
+*** TURN *** [Qc 8h 6s] [Ad]
+*** RIVER *** [Qc 8h 6s Ad] [7s]
+*** SHOW DOWN ***
+FIZZE76: shows [Ac 4h] (a pair of Aces)
+LtGrimms: shows [2s 2c] (a pair of Deuces)
+FIZZE76 collected 12084 from pot
+*** SUMMARY ***
+Total pot 12084 | Rake 0 
+Board [Qc 8h 6s Ad 7s]
+Seat 1: hironisisaka (small blind) folded before Flop
+Seat 2: FIZZE76 (big blind) showed [Ac 4h] and won (12084) with a pair of Aces
+Seat 3: DRAGOS FCSB folded before Flop (didn't bet)
+Seat 4: R@nTAnpl@N folded before Flop (didn't bet)
+Seat 5: Fakhish folded before Flop (didn't bet)
+Seat 6: zas91 folded before Flop (didn't bet)
+Seat 7: LtGrimms showed [2s 2c] and lost with a pair of Deuces
+Seat 8: Adios89 folded before Flop (didn't bet)
+Seat 9: MoKoZoBa (button) folded before Flop (didn't bet)

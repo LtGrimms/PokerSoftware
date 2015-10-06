@@ -1,0 +1,38 @@
+PokerStars Hand #139417497046: Tournament #1292680929, $10+$1 USD Hold'em No Limit - Level I (10/20) - 2015/08/15 13:15:18 ET
+Table '1292680929 17' 9-max Seat #1 is the button
+Seat 1: RoyalBluf NL (3000 in chips) 
+Seat 2: rastamanooo (3000 in chips) 
+Seat 3: liamkid (3000 in chips) 
+Seat 4: R@nTAnpl@N (3000 in chips) 
+Seat 5: Skollpada (3000 in chips) 
+Seat 7: LtGrimms (3000 in chips) 
+Seat 8: Adios89 (3000 in chips) 
+Seat 9: Liskacha (3000 in chips) 
+rastamanooo: posts small blind 10
+liamkid: posts big blind 20
+*** HOLE CARDS ***
+Dealt to LtGrimms [6c Ac]
+R@nTAnpl@N: raises 40 to 60
+Skollpada: folds 
+LtGrimms: calls 60
+Adios89: folds 
+Liskacha: folds 
+RoyalBluf NL: folds 
+rastamanooo: folds 
+liamkid: folds 
+*** FLOP *** [Kh 8h 7d]
+R@nTAnpl@N: bets 76
+LtGrimms: folds 
+Uncalled bet (76) returned to R@nTAnpl@N
+R@nTAnpl@N collected 150 from pot
+*** SUMMARY ***
+Total pot 150 | Rake 0 
+Board [Kh 8h 7d]
+Seat 1: RoyalBluf NL (button) folded before Flop (didn't bet)
+Seat 2: rastamanooo (small blind) folded before Flop
+Seat 3: liamkid (big blind) folded before Flop
+Seat 4: R@nTAnpl@N collected (150)
+Seat 5: Skollpada folded before Flop (didn't bet)
+Seat 7: LtGrimms folded on the Flop
+Seat 8: Adios89 folded before Flop (didn't bet)
+Seat 9: Liskacha folded before Flop (didn't bet)
