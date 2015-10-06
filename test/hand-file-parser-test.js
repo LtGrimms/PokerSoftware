@@ -4,7 +4,7 @@ var hand_file_parser = require('../lib/hand-file-parser');
 var reLib = require('../lib/poker-regex-library');
 var should = require('should');
 
-var generate_output = true;
+var generate_output = false;
 
 var assert_or_save_output = function(data, filename) {
     if (generate_output) {
